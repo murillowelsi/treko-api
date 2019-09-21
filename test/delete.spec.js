@@ -26,7 +26,7 @@ describe('delete', () => {
                 request
                     .delete('/task/' + task._id)
                     .end((err, res) => {
-                        expect(res).to.have.status(204)
+                        expect(res).to.have.status(200)
                         expect(res.body).to.eql({})
                         done()
                     })
